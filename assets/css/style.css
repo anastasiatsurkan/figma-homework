@@ -444,6 +444,10 @@
     line-height: 25px;
 }
 
+.footer-content, .footer-section {
+    flex-wrap: wrap;
+}
+
 .footer-content .blog-content {
     display: flex;
     width: 235px;
