@@ -14,7 +14,6 @@
     max-width: 1440px;
     width: 100%;
     display: flex;
-    height: 900px;
     position: relative;
 }
 
@@ -69,13 +68,15 @@
     margin-right: 24px;
 }
 
-.navigation-bar img {
+.navigation-bar .contact {
     height: 50px;
     width: 50px;
     margin-left: auto;
 }
 
-
+.navigation-bar .mobile-version {
+    display: none;
+}
 
 .navigation-bar .left-side {
     background-color: #F3EEE8;
@@ -433,9 +434,6 @@
 }
 
 .lists .list ul li {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
     color: #706458;
     font-family: Varta;
     font-size: 18px;
@@ -444,7 +442,8 @@
     line-height: 25px;
 }
 
-.footer-content, .footer-section {
+.footer-content,
+.footer-section {
     flex-wrap: wrap;
 }
 
@@ -577,4 +576,257 @@
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-header .hero-header-container {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        width: 100%;
+    }
+
+    .hero-header .hero-header-container .right-side {
+        display: none;
+        width: 0%;
+    }
+
+    .hero-header .hero-header-container .left-side {
+        background-image: url('/assets/media/Picture.png');
+        min-width: 375px;
+        width: 100%;
+    }
+
+    .hero-header .hero-header-container .navigation-bar {
+        height: 45px;
+        justify-content: space-between;
+    }
+
+    .hero-header .hero-header-container .navigation-bar h2 {
+        color: #FFF;
+        padding: 10px;
+        align-items: flex-start;
+
+    }
+
+    .hero-header .hero-header-container .navigation-bar ul {
+        display: none;
+    }
+
+    .hero-header .hero-header-container .navigation-bar .contact {
+        display: none;
+
+    }
+
+    .hero-header .hero-header-container .navigation-bar .mobile-version {
+        display: flex;
+        width: 24px;
+        height: 12px;
+    }
+
+    .hero-header-container .page-header .p1 {
+        color: #FFF;
+        text-align: center;
+        padding-bottom: 24px;
+        text-transform: uppercase;
+    }
+
+    .hero-header-container .page-header h1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -0.3px;
+        padding-bottom: 24px;
+    }
+
+    .hero-header-container .page-header p {
+        color: #F7F8F9;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        padding-bottom: 24px;
+    }
+
+    .hero-header-container .page-header img {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-container {
+        display: flex;
+        min-width: 375px;
+        padding: 48px 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .projects-container .main-left-side h1 {
+        color: #534B42;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.3px;
+        
+    }
+
+    .projects-container .main-left-side a {
+        color: #A06056;
+        font-family: Lato;
+        font-size: 17px;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 0.3px;
+        text-decoration: none;
+    }
+
+    .main-left-side .main-link,
+    .main-right-side {
+        gap: 41px;
+        
+    }
+
+    .projects-container .main-right-side {
+        gap: 40px;
+    }
+
+    .latest-trends {
+        min-width: 375px;
+    }
+
+    .latest-trends .latest-trends-container {
+        padding: 48px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 64px;
+        width: 311px;
+    }
+
+    .latest-trends-container .section-header {
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    .latest-trends-container .section-header .title {
+        gap: 16px;
+    }
+
+    .latest-trends-container .section-header .title h2,
+    p {
+        width: 290px;
+    }
+
+    .latest-trends-container .section-header .section-header-form {
+        flex-wrap: wrap;
+    }
+
+    .latest-trends-container .section-header .section-header-form input {
+        padding: 12px 15px;
+        min-width: 311px;
+    }
+
+    .latest-trends-container .section-header .section-header-form button {
+        min-width: 311px;
+    }
+
+    .latest-trends-container .slider {
+        gap: 40px;
+    }
+
+    .latest-trends-container .slider .pictures-section {
+        order: 2;
+        gap: 20px;
+    }
+
+    .latest-trends-container .slider .section-footer {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .latest-trends-container .slider .section-footer h1 {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .latest-trends-container .slider .section-footer p {
+        color: #706458e6
+    }
+
+    .latest-trends-container .slider .pictures-section img {
+        width: 311px;
+        height: 175px;
+        object-fit: cover;
+    }
+
+    .footer-section .footer-section-container {
+        min-width: 375px;
+        display: flex;
+        padding: 48px 32px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-section .footer-section-container .footer-content h2 {
+        align-items: center;
+    }
+
+    .footer-section-container .footer-content .lists {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .footer-content .lists .list h4 {
+        color: #121212;
+        padding-bottom: 10px;
+        padding-top: 40px;
+    }
+
+    .footer-content .blog-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+    }
+
+    .footer-content .blog-content .post {
+        gap: 16px;
+    }
+
+    .footer-content .blog-content .post .image {
+        width: 311px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .footer-content .blog-content .post p {
+        width: 290px;
+        font-size: 18px;
+    }
+
+    .footer-section .copyright-content .socials {
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-section .copyright-content .legals {
+        gap: 32px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .footer-section .copyright-content .legals p {
+        order: 2;
+        width: 311px;
+    }
+
+    .footer-section .copyright-content .legals ul {
+        gap: 24px;
+    }
+
+
 }
