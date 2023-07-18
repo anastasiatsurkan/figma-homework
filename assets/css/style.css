@@ -583,7 +583,7 @@
     body {
         min-width: 375px;
     }
-    
+
     .hero-header .hero-header-container {
         flex-direction: column;
         padding: 0;
@@ -718,6 +718,7 @@
 
     .main-right-side .box {
         width: 100%;
+        padding: 0;
     }
 
     .latest-trends .latest-trends-container {
@@ -835,6 +836,7 @@
         gap: 32px;
         flex-wrap: wrap;
         align-items: flex-start;
+        flex-direction: column;
     }
 
     .footer-section .copyright-content .legals p {
